@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/">
+        <file>J.ico</file>
+        <file alias="Style">Style.qss</file>
+        <file alias="MyFont">myFont.ttf</file>
+        <file alias="loading">loading.gif</file>
+    </qresource>
+    <qresource prefix="/ico">
+        <file>checkbox_checked.png</file>
+        <file>checkbox_unchecked.png</file>
+        <file>radiobutton-checked-md.png</file>
+        <file>radiobutton-unchecked-md.png</file>
+    </qresource>
+</RCC>
