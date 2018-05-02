@@ -1,4 +1,4 @@
-QT += core gui widgets network webenginewidgets
+QT += core gui widgets network webenginewidgets xml
 
 SOURCES += \
     main.cpp \
@@ -6,7 +6,8 @@ SOURCES += \
     myhttp.cpp \
     mylabel.cpp \
     form.cpp \
-    loadingdialog.cpp
+    loadingdialog.cpp \
+    preg_jlict.cpp
 
 HEADERS += \
     chinese.h \
@@ -14,7 +15,8 @@ HEADERS += \
     myhttp.h \
     mylabel.h \
     form.h \
-    loadingdialog.h
+    loadingdialog.h \
+    preg_jlict.h
 
 RESOURCES += \
     resource.qrc

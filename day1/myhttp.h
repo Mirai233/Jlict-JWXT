@@ -1,4 +1,4 @@
-﻿#ifndef MYHTTP_H
+#ifndef MYHTTP_H
 #define MYHTTP_H
 
 #include <QObject>
@@ -14,7 +14,6 @@
 #include <QNetworkCookie>
 #include <QNetworkCookieJar>
 #include <QList>
-#include <QTextCodec>
 
 
 class MyHttp : public QObject
@@ -32,10 +31,9 @@ signals:
     void login_timeout();
     void login_error();
     void form_init_end(QString);
-    void Form_XJKP_end(QString);
+    void form_init_error();
     void Form_CJCX_end(QString);
     void Form_XSKB_end(QString);
-    void Form_HKSQ_end(QString);
 public slots:
     void init();
     void replyHome(QNetworkReply *);
@@ -47,8 +45,6 @@ public slots:
     void init_name(QString);
     void Form_init();
     void Form_init_end(QNetworkReply*);
-    void Form_XJKP_init(QNetworkReply*);
-    void Form_HKSQ_init(QNetworkReply*);
     void Form_CJCX_init(QNetworkReply*);
     void Form_XSKB_init(QNetworkReply*);
 

@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1200</width>
-    <height>600</height>
+    <width>1300</width>
+    <height>620</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -18,8 +18,8 @@
   </property>
   <property name="minimumSize">
    <size>
-    <width>1200</width>
-    <height>600</height>
+    <width>1300</width>
+    <height>620</height>
    </size>
   </property>
   <property name="focusPolicy">
@@ -62,25 +62,172 @@
      <property name="tabBarAutoHide">
       <bool>false</bool>
      </property>
-     <widget class="QWidget" name="tab">
-      <attribute name="title">
-       <string>个人学籍卡</string>
-      </attribute>
-     </widget>
      <widget class="QWidget" name="tab_2">
       <attribute name="title">
        <string>成绩查询</string>
       </attribute>
+      <widget class="QTableWidget" name="tableWidget">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>1151</width>
+         <height>531</height>
+        </rect>
+       </property>
+       <column>
+        <property name="text">
+         <string>是否通过</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>开课日期</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>课程编号</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>课程名称</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>总成绩</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>学分</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>学时</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>课程性质</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>课程类别</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>考试性质</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>考核方式</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>标志</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>补重学期</string>
+        </property>
+       </column>
+      </widget>
      </widget>
      <widget class="QWidget" name="tab_3">
       <attribute name="title">
        <string>课表查询</string>
       </attribute>
-     </widget>
-     <widget class="QWidget" name="tab_4">
-      <attribute name="title">
-       <string>缓考申请</string>
-      </attribute>
+      <widget class="QTableWidget" name="tableWidget_2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>1261</width>
+         <height>561</height>
+        </rect>
+       </property>
+       <attribute name="horizontalHeaderCascadingSectionResizes">
+        <bool>false</bool>
+       </attribute>
+       <attribute name="verticalHeaderCascadingSectionResizes">
+        <bool>false</bool>
+       </attribute>
+       <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+        <bool>false</bool>
+       </attribute>
+       <attribute name="verticalHeaderStretchLastSection">
+        <bool>false</bool>
+       </attribute>
+       <row>
+        <property name="text">
+         <string>一二节课</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>三四节课</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>五六节课</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>七八节课</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>九十节课</string>
+        </property>
+       </row>
+       <column>
+        <property name="text">
+         <string>周一</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>周二</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>周三</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>周四</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>周五</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>周六</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>周日</string>
+        </property>
+       </column>
+      </widget>
      </widget>
     </widget>
    </item>

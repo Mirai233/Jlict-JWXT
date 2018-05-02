@@ -21,6 +21,11 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
+
+
+*{
+    font-size:15px;
+}
  QRadioButton::indicator {
      width: 17px;
      height: 17px;
@@ -356,7 +361,7 @@ QTabWidget:focus, QCheckBox:focus, QRadioButton:focus, QSlider:focus
 QLineEdit
 {
     background-color: #232629;
-    padding: 5px;
+    padding: 3px;
     border-style: solid;
     border: 1px solid #76797C;
     border-radius: 2px;

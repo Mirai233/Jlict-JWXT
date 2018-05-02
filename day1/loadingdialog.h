@@ -1,4 +1,4 @@
-﻿#ifndef LOADINGDIALOG_H
+#ifndef LOADINGDIALOG_H
 #define LOADINGDIALOG_H
 #include <chinese.h>
 #include <QDialog>
@@ -7,6 +7,7 @@
 #include <QPoint>
 #include <QLabel>
 #include <QTime>
+#include <QIcon>
 #include <QPropertyAnimation>
 
 
@@ -20,6 +21,7 @@ public:
     void sleep(int);
 public slots:
     void loading();
+    void loading_error();
     void toggeleToForm(QString);
 signals:
     void toForm(QString);

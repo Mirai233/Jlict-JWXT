@@ -1,11 +1,10 @@
-﻿#ifndef FORM_H
+#ifndef FORM_H
 #define FORM_H
 
 #include <chinese.h>
 #include <QDebug>
 #include <QWidget>
 #include <QPropertyAnimation>
-#include <QWebEngineView>
 #include <QHBoxLayout>
 #include <QDesktopWidget>
 #include <QPoint>
@@ -13,6 +12,12 @@
 #include <QMenu>
 #include <QAction>
 #include <QToolTip>
+#include <QFile>
+#include <QList>
+#include <QStandardPaths>
+#include <preg_jlict.h>
+#include <QStandardItem>
+#include <QMessageBox>
 
 namespace Ui {
 class Form;
@@ -30,25 +35,22 @@ signals:
     void toggle_to_login();
 public slots:
     void Start_Init(QString);
-    void Form_XJKP_init(QString);
     void Form_CJCX_init(QString);
     void Form_XSKB_init(QString);
-    void Form_HKSQ_init(QString);
     void Change_user();
+    void Show_Score();
 private:
     Ui::Form *ui;
-    QWebEngineView *m_webView;
-    QWebEngineView *m_webView1;
-    QWebEngineView *m_webView2;
-    QWebEngineView *m_webView3;
-    QHBoxLayout *l_tab;
+    QString Score = "";
     QHBoxLayout *l_tab1;
     QHBoxLayout *l_tab2;
-    QHBoxLayout *l_tab3;
     QMenuBar *menu_bar;
     QMenu *menu1;
+    QMenu *menu2;
     QAction *act1;
     QAction *act2;
+    QAction *act3;
+    Preg_Jlict *j;
 };
 
 #endif // FORM_H
