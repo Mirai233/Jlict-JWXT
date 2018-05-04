@@ -43,6 +43,7 @@ public slots:
     void Show_Score();
     void more();
     void ReadCache(QString);
+    void ClearCache();
 public:
     void sleep(qint32);
     void WriteCache(QList<QString>);
@@ -61,6 +62,7 @@ private:
     QAction *act2;
     QAction *act3;
     QAction *act4;
+    QAction *act5;
     Preg_Jlict *j;
 };
 
