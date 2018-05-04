@@ -7,7 +7,9 @@ SOURCES += \
     mylabel.cpp \
     form.cpp \
     loadingdialog.cpp \
-    preg_jlict.cpp
+    preg_jlict.cpp \
+    ocv.cpp \
+    img_ocv.cpp
 
 HEADERS += \
     chinese.h \
@@ -16,7 +18,9 @@ HEADERS += \
     mylabel.h \
     form.h \
     loadingdialog.h \
-    preg_jlict.h
+    preg_jlict.h \
+    ocv_.h \
+    img_ocv.h
 
 RESOURCES += \
     resource.qrc
@@ -32,5 +36,13 @@ DISTFILES += \
     checkbox_unchecked.png
 
 FORMS += \
-    form.ui
+    form.ui \
+    img_ocv.ui
+
+INCLUDEPATH+= D:\OpenCv\opencv\build\include\opencv  \
+              D:\OpenCv\opencv\build\include\opencv2 \
+              D:\OpenCv\opencv\build\include
+
+LIBS += D:\OpenCv\opencv\build\x64\vc15\lib\*.lib
+
 

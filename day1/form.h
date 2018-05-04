@@ -18,6 +18,7 @@
 #include <preg_jlict.h>
 #include <QStandardItem>
 #include <QMessageBox>
+#include <QStatusBar>
 
 namespace Ui {
 class Form;
@@ -33,23 +34,33 @@ public:
 signals:
     void init_so();
     void toggle_to_login();
+    void togglt_to_more();
 public slots:
     void Start_Init(QString);
     void Form_CJCX_init(QString);
     void Form_XSKB_init(QString);
     void Change_user();
     void Show_Score();
+    void more();
+    void ReadCache(QString);
+public:
+    void sleep(qint32);
+    void WriteCache(QList<QString>);
+    void WriteCache(QString);
 private:
     Ui::Form *ui;
+    QString File = "";
     QString Score = "";
     QHBoxLayout *l_tab1;
     QHBoxLayout *l_tab2;
     QMenuBar *menu_bar;
     QMenu *menu1;
     QMenu *menu2;
+    QMenu *menu3;
     QAction *act1;
     QAction *act2;
     QAction *act3;
+    QAction *act4;
     Preg_Jlict *j;
 };
 

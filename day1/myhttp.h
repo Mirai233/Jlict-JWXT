@@ -14,6 +14,8 @@
 #include <QNetworkCookie>
 #include <QNetworkCookieJar>
 #include <QList>
+#include <QStandardPaths>
+#include <QDateTime>
 
 
 class MyHttp : public QObject
@@ -34,23 +36,23 @@ signals:
     void form_init_error();
     void Form_CJCX_end(QString);
     void Form_XSKB_end(QString);
+    void Form_Cache_Right(QString);
 public slots:
     void init();
     void replyHome(QNetworkReply *);
     void loginStart(QString *);
     void loginEnd(QNetworkReply *);
     void replyCert(QNetworkReply *);
-
-
     void init_name(QString);
     void Form_init();
     void Form_init_end(QNetworkReply*);
     void Form_CJCX_init(QNetworkReply*);
     void Form_XSKB_init(QNetworkReply*);
-
-
+protected:
+    bool Check_caches(QString);
 private:
     QString Url;
+    QString realname;
     QString Name;
     QString Cookie;
     QString Login_str;
