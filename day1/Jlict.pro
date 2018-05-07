@@ -9,7 +9,8 @@ SOURCES += \
     loadingdialog.cpp \
     preg_jlict.cpp \
     ocv.cpp \
-    img_ocv.cpp
+    img_ocv.cpp \
+    titlebar.cpp
 
 HEADERS += \
     chinese.h \
@@ -20,7 +21,8 @@ HEADERS += \
     loadingdialog.h \
     preg_jlict.h \
     ocv_.h \
-    img_ocv.h
+    img_ocv.h \
+    titlebar.h
 
 RESOURCES += \
     resource.qrc
@@ -39,10 +41,6 @@ FORMS += \
     form.ui \
     img_ocv.ui
 
-INCLUDEPATH+= D:\OpenCv\opencv\build\include\opencv  \
-              D:\OpenCv\opencv\build\include\opencv2 \
-              D:\OpenCv\opencv\build\include
 
-LIBS += D:\OpenCv\opencv\build\x64\vc15\lib\*.lib
 
 

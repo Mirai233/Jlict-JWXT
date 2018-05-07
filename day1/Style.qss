@@ -112,7 +112,6 @@ QGroupBox::indicator
 {
     margin-left: 2px;
 }
-
 QCheckBox::indicator:unchecked
 {
     image: url(:/qss_icons/rc/checkbox_unchecked.png);
@@ -234,6 +233,7 @@ QRadioButton::indicator:unchecked:disabled
 QMenuBar
 {
     background-color: #31363b;
+    border-bottom:1px solid #B97A57;
     color: #eff0f1;
 }
 
@@ -645,6 +645,37 @@ QPushButton:disabled
     color: #454545;
 }
 
+
+QPushButton:checked{
+    background-color: #76797C;
+    border-color: #6A6969;
+}
+#minimizeButton{
+    image: url(:/min);
+    border:none;
+}
+#minimizeButton:hover {
+    background-color:#969696;
+}
+#maximizeButton{
+    image: url(:/max);
+    border:none;
+}
+#maximizeButton:hover {
+    background-color:#969696;
+}
+#closeButton{
+    image: url(:/close);
+    border:none;
+}
+#closeButton:hover {
+    background-color:#FF3300;
+}
+#whiteLabel{
+    font-size:14px;
+    color:#C0C0C0;
+}
+
 QPushButton:focus {
     background-color: #3daee9;
     color: white;
@@ -667,10 +698,7 @@ QComboBox
     min-width: 75px;
 }
 
-QPushButton:checked{
-    background-color: #76797C;
-    border-color: #6A6969;
-}
+
 
 QComboBox:hover,QPushButton:hover,QAbstractSpinBox:hover,QLineEdit:hover,QTextEdit:hover,QPlainTextEdit:hover,QAbstractView:hover,QTreeView:hover
 {
@@ -1171,11 +1199,11 @@ QHeaderView::section:checked
 
  /* style the sort indicator */
 QHeaderView::down-arrow {
-    image: url(:/qss_icons/rc/down_arrow.png);
+    image: url(:/down);
 }
 
 QHeaderView::up-arrow {
-    image: url(:/qss_icons/rc/up_arrow.png);
+    image: url(:/up);
 }
 
 

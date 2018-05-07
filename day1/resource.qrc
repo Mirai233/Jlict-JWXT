@@ -3,6 +3,11 @@
         <file>J.ico</file>
         <file alias="Style">Style.qss</file>
         <file alias="loading">loading.gif</file>
+        <file alias="close">close.png</file>
+        <file alias="up">less.png</file>
+        <file alias="down">more_unfold.png</file>
+        <file alias="min">subtract.png</file>
+        <file alias="max">选择4-01.png</file>
     </qresource>
     <qresource prefix="/ico">
         <file>checkbox_checked.png</file>

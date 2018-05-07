@@ -25,6 +25,8 @@
 #include <QList>
 #include <QDataStream>
 #include <QMessageBox>
+#include <titlebar.h>
+#include <QPalette>
 
 class mainWindow : public QMainWindow
 {

@@ -6,6 +6,7 @@
 #include <QWidget>
 #include <QPropertyAnimation>
 #include <QHBoxLayout>
+#include <QVBoxLayout>
 #include <QDesktopWidget>
 #include <QPoint>
 #include <QMenuBar>
@@ -19,6 +20,7 @@
 #include <QStandardItem>
 #include <QMessageBox>
 #include <QStatusBar>
+#include <titlebar.h>
 
 namespace Ui {
 class Form;
@@ -54,6 +56,7 @@ private:
     QString Score = "";
     QHBoxLayout *l_tab1;
     QHBoxLayout *l_tab2;
+    QHBoxLayout *l_index;
     QMenuBar *menu_bar;
     QMenu *menu1;
     QMenu *menu2;
@@ -64,6 +67,7 @@ private:
     QAction *act4;
     QAction *act5;
     Preg_Jlict *j;
+    TitleBar *pTitleBar;
 };
 
 #endif // FORM_H
